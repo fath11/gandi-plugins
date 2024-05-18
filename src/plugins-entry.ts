@@ -14,4 +14,5 @@ export default {
   "witcat-blockinput": () => import(/* webpackChunkName: "plugin-witcat-blockinput" */ "src/plugins/witcat-blockinput"),
   "kukemc-beautify": () => import(/* webpackChunkName: "plugin-kukemc-beautify" */ "src/plugins/kukemc-beautify"),
   "fast-input": () => import(/* webpackChunkName: "plugin-fast-input" */ "src/plugins/fast-input"),
+  "more-search-bar": () => import(/* webpackChunkName: "plugin-more-search-bar" */ "src/plugins/more-search-bar"),
 } as const;

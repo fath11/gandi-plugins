@@ -12,6 +12,7 @@ import customPlugin from "src/plugins/custom-plugin/manifest";
 import witcatBlockinput from "src/plugins/witcat-blockinput/manifest";
 import kukemcBeautify from "src/plugins/kukemc-beautify/manifest";
 import fastInput from "src/plugins/fast-input/manifest";
+import moreSearchBar from "src/plugins/more-search-bar/manifest";
 
 export default {
   folder,
@@ -28,4 +29,5 @@ export default {
   "witcat-blockinput": witcatBlockinput,
   "kukemc-beautify": kukemcBeautify,
   "fast-input": fastInput,
+  "more-search-bar": moreSearchBar,
 };
