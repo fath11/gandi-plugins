@@ -10,11 +10,11 @@ const KukemcBeautify: React.FC<PluginContext> = ({ msg, registerSettings }) => {
       [
         {
           key: "kukemcBeautify",
-          label: msg("plugins.kukemcBeautify.title"),
+          label: msg("plugins.kukemcBeautify.frostedGlass"),
           description: msg("plugins.kukemcBeautify.description"),
           items: [
             {
-              key: "Ground",
+              key: "frosted",
               label: msg("plugins.kukemcBeautify.frostedGlass"),
               type: "switch",
               value: false,
@@ -51,6 +51,23 @@ const KukemcBeautify: React.FC<PluginContext> = ({ msg, registerSettings }) => {
               },
             },
           ],
+        },
+        {
+          key: "backgroundImages",
+          label: msg("plugins.kukemcBeautify.backgroundImages"),
+          description: msg("plugins.kukemcBeautify.backgroundImages.description"),
+          items: [
+            {
+              key: "stage-spritesBox",
+              label: msg("plugins.kukemcBeautify.stage-spritesBox"),
+              description: msg("plugins.kukemcBeautify.stage-spritesBox.description"),
+              type: "input",
+              value: "https://...",
+              onChange: (value: string) => {
+                document.body.style.setProperty("--stage-spritesBox-background-image", `url(${value})`);
+              },
+            },
+          ]
         },
       ],
       <KukemcBeautifyIcon />,

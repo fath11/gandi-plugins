@@ -11,6 +11,7 @@
 
 .frosted-glass section[class^="gandi_collapsible-box_collapsible-box"] {
   background: transparent;
+  background-image: var(--stage-spritesBox-background-image);
 }
 
 .frosted-glass header[class^="gandi_collapsible-box_header"] {
@@ -19,6 +20,11 @@
 
 .frosted-glass div[class^="gandi_collapsible-box_body"] {
   position: relative;
+}
+
+section[class^="gandi_collapsible-box_collapsible-box"] {
+  background-image: var(--stage-spritesBox-background-image);
+  
 }
 
 :root[theme="dark"] .frosted-glass {
@@ -32,6 +38,7 @@
 .frosted-glass {
   --alpha: 0.29;
   --radius: 10px;
+  --stage-spritesBox-background-image: "";
 
   :global(.blocklyWidgetDiv .goog-menu),
   :global(.gandi_context-menu_context-menu_2SJM-),
