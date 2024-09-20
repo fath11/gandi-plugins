@@ -18,6 +18,7 @@ import customCss from "src/plugins/custom-css/manifest";
 import extensionManager from "src/plugins/extension-manager/manifest";
 import voiceCooperation from "src/plugins/voice-cooperation/manifest";
 import costumePiskel from "src/plugins/costume-piskel/manifest";
+import paper from "src/plugins/paper/manifest";
 
 export default {
   folder,
@@ -40,4 +41,5 @@ export default {
   "extension-manager": extensionManager,
   "voice-cooperation": voiceCooperation,
   "costume-piskel": costumePiskel,
+  paper: paper,
 };

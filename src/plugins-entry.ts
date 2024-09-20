@@ -22,4 +22,5 @@ export default {
   "extension-manager": () => import(/* webpackChunkName: "plugin-extension-manager" */ "src/plugins/extension-manager"),
   "voice-cooperation": () => import(/* webpackChunkName: "plugin-voice-cooperation" */ "src/plugins/voice-cooperation"),
   "costume-piskel": () => import(/* webpackChunkName: "plugin-costume-piskel" */ "src/plugins/costume-piskel"),
+  paper: () => import(/* webpackChunkName: "plugin-paper" */ "src/plugins/paper"),
 } as const;
